@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/myp9"
+                android:background="#D6432C"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="6dp"
+                card_view:cardElevation="1dp">
+
+                <LinearLayout
+                    android:id="@+id/locationstatisticslinear"
+                    android:layout_gravity="center"
+                    android:background="#D6432C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/selfservice"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="18dp"
+                        android:text="Employee Self Service"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+
+
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/progressBar"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="#D6432C"
+                android:id="@+id/cv_account"
+                android:layout_weight="0.5"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp">
+                <ProgressBar
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/progress"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/nexkofkin"
+                    android:orientation="vertical"
+                    android:background="#D6432C"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/money"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="My P9"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="0.5"
+                android:background="#FF8875"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/fire"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="1dp"
+                >
+                <LinearLayout
+                    android:id="@+id/firelayout"
+                    android:background="#FF8875"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/money1"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="Imprest Surrender"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!--row2-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="#F56D58"
+                android:layout_weight="0.5"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="2dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ambulance_layout"
+                    android:clickable="true"
+                    android:background="#F56D58"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/money1"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="Imprest Memo"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>-->
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="0.5"
+                android:background="#1BA868"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/cv_send_cash"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="2dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/police_layout"
+                    android:orientation="vertical"
+                    android:background="#1BA868"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/leaveapplication"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="Leave Application"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        //row 2
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="#58F5AD"
+                android:layout_weight="0.5"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="2dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/store"
+                    android:clickable="true"
+                    android:background="#58F5AD"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/purchases"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="Store Requisition"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>-->
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="0.5"
+                android:background="#D6432C"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/fleet"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="2dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/fleet1"
+                    android:background="#D6432C"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/fleet"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="Fleet Requisition"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        //row3
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="#F56D58"
+                android:layout_weight="0.5"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="2dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/payslip"
+                    android:clickable="true"
+                    android:background="#F56D58"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/payslips"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="My Payslip"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>-->
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="0.5"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/purchase"
+                android:background="#FF8875"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="2dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/purchase1"
+                    android:background="#FF8875"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/purchases"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="Purchase Requisition"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="#F56D58"
+                android:layout_weight="0.5"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="2dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/statement"
+                    android:clickable="true"
+                    android:background="@color/dot_light_screen3"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/statements"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="Employee Statement"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>-->
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="0.5"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/icts"
+                android:background="#FF8875"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="2dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/icthelpdesk"
+                    android:background="@color/color_home"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/icthelpdesk"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="Purchase Requisition"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="#F56D58"
+                android:layout_weight="0.5"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="2dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/pettycash"
+                    android:clickable="true"
+                    android:background="@color/grey_5"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/money1"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="Petty Cash Requisition"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>-->
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="0.5"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/claimsdetails"
+                android:background="#FF8875"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="2dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/claims"
+                    android:background="@color/color_home"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/money1"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:textSize="12dp"
+                        android:text="Staff Claim Requisition"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+

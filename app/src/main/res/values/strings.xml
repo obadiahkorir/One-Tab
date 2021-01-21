@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ESSAPP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Dynasoft Business Solutions Ltd</string>
+    <string name="nav_header_subtitle">obadiahkorir@dynasoft.co.ke</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_leave">Leave Application</string>
+    <string name="menu_slideshow">Employee Statement</string>
+    <string name="menu_payslip">My Payslip</string>
+    <string name="menu_p9">Employee P9</string>
+    <string name="menu_gallery">Imprest Requisition</string>
+    <string name="menu_petty">Petty Cash Requisition</string>
+    <string name="menu_claim">Staff Claim Requisition</string>
+    <string name="menu_fleet">Fleet Requisition</string>
+    <string name="menu_purchase">Purchase Requisition</string>
+    <string name="menu_store">Store Requisition</string>
+     <string name="menu_ict">ICT Help Desk</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="login">LOG IN</string>
+    <string name="account">Profile</string>
+    <string name="slide_1_title">Apply for Your Imprest on the  Go. Save Others!</string>
+    <string name="slide_1_desc">The easiest way to get Employee Self Services!</string>
+    <string name="slide_2_title">Imprest Requisition</string>
+    <string name="slide_2_desc">Apply for our Imprest without any Hurry!</string>
+    <string name="slide_3_title">Leave Application!</string>
+    <string name="slide_3_desc">One-Tab will ensure that you apply for your Leave instantly!</string>
+    <string name="slide_4_title">Your Services is Our Objective</string>
+    <string name="slide_4_desc">Get your P9 Instantly on a click of a Button!</string>
+</resources>
